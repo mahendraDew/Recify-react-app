@@ -1,4 +1,4 @@
-# Project Lyrics
+# Recify - A music streaming platform
 
 Develop an elegant React.js Music Application. 
 
