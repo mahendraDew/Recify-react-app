@@ -31,7 +31,7 @@ const Sidebar = () => {
         <div className='flex justify-center items-center flex-col'>
           <img src={logo} alt='logo' className='w-full h-14 object-contain' />
           <h2 className='text-white font-bold font-sans'>RECIFY</h2>
-          <p className='text-white font-thin text-sm'>A taste of music</p>
+          <p className='text-white font-mono  text-sm'>A taste of music</p>
         </div>
         <NavLinks />
       </div>
