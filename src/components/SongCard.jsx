@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import PlayPause from './PlayPause'
 import { playPause, setActiveSong } from '../redux/features/playerSlice'
+import { useEffect } from 'react'
 
 const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
   const dispatch = useDispatch()
-
   const handlePlayClick = () => {
     dispatch(setActiveSong({song, data, i})),
     dispatch(playPause(true));
@@ -13,6 +13,11 @@ const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
   const handlePauseClick = () => {
     dispatch(playPause(false));
   }
+
+
+  // console.log(song , "song from SongCard.jsx")
+  // console.log(data , "data from SongCard.jsx")
+  // console.log(activeSong , "activesong from SongCard.jsx")
 
   return (
     <div className='flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer'>
